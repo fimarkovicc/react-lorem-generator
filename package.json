@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/fimarkovicc/react-lorem-generator/issues"
   },
-  "homepage": "https://github.com/fimarkovicc/react-lorem-generator#readme"
+  "homepage": "https://github.com/fimarkovicc/react-lorem-generator#readme",
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
 }
