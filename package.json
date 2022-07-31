@@ -1,10 +1,9 @@
 {
   "name": "react-lorem-generator",
   "version": "1.0.0",
-  "description": "A react component to generate dummy lorem ipsum text.",
-  "main": "Lorem.js",
+  "description": "A react component to generate dummy lorem ipsum text paragraphs.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c"
   },
   "repository": {
     "type": "git",
@@ -20,8 +19,21 @@
     "url": "https://github.com/fimarkovicc/react-lorem-generator/issues"
   },
   "homepage": "https://github.com/fimarkovicc/react-lorem-generator#readme",
-  "peerDependencies": {
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^22.0.1",
+    "@rollup/plugin-node-resolve": "^13.0.6",
+    "@rollup/plugin-typescript": "^8.3.0",
+    "@types/react": "^18.0.15",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  }
+    "rollup": "^2.60.0",
+    "rollup-plugin-dts": "^4.0.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.4"
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts"
 }

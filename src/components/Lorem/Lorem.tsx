@@ -1,11 +1,19 @@
 import React from 'react'
 import { words } from './data'
 
-function Lorem(props) {
+export interface LoremProps {
+    paragraphs: number
+    minSentences: number
+    maxSentences: number
+    minWords: number
+    maxWords: number
+}
+
+function Lorem(props: LoremProps) {
     
     const { paragraphs, minSentences, maxSentences, minWords, maxWords } = props
     
-    function renderSentence(numOfWords){
+    function renderSentence(numOfWords: number){
         let sentence = ''
 
         for(let i = 0; i < numOfWords; i++){
@@ -16,7 +24,7 @@ function Lorem(props) {
     }
 
     function renderParagraphs(){
-        let sentences = []
+        let sentences:string[][] = []
         
         for(let i = 0; i < paragraphs; i++){
             sentences.push([])
@@ -36,7 +44,7 @@ function Lorem(props) {
     return (
         <>
             {
-                paragraphsArr.map((item, i) => {
+                paragraphsArr.map((item:string[], i) => {
                     return (
                         <p key={i}>
                         {item.map(sentence => {
@@ -58,4 +66,4 @@ Lorem.defaultProps = {
     maxWords: 15
   }
 
-export default Lorem;
+export default Lorem
