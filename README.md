@@ -9,7 +9,7 @@ npm i react-lorem-generator
 ## Usage
 To use the component simply import it,
 ```sh
-import Lorem from 'react-lorem-generator'
+import { Lorem } from 'react-lorem-generator'
 ```
 
 and use it as any other react component.
