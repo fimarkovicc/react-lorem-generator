@@ -1,6 +1,6 @@
 {
   "name": "react-lorem-generator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A react component to generate dummy lorem ipsum text paragraphs.",
   "scripts": {
     "build": "rollup -c"
